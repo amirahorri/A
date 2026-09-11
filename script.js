@@ -426,3 +426,8 @@ function fibonnacci(n) {
 }
 console.log(fibonnacci(4)) 
 console.log("manel and amira  are bestie ");
+const add = function(a,b) {
+    return a+b ;
+
+};
+console.log(add(5,3))
