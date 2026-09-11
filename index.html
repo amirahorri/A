@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- the head contains information about the page, not visible on the website -->
+
+    <meta charset="UTF-8" />
+    <!-- makes the website responsive on phones, tablets and computers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- the title that appears in the browser tab -->
+    <title>First website</title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+
+  <body>
+    <!-- the body contains everything that is visible on the website -->
+
+    <!-- the top part of the website -->
+    <header>
+      <!-- used to put the navigation bar -->
+      <nav></nav>
+
+
+    </header>
+
+    <!-- the main content of the page -->
+    <main>
+      <!-- first section of the page -->
+      <section>
+        <!-- h2 to h6 are headings used for subtitles and smaller titles -->
+        <!-- h1 is the most important title, h2 comes after h1, then h3, h4, h5 and h6 -->
+        <!-- use them in order to organize your page and make it easier to read -->
+        <h1>title</h1>
+        <div class="box">
+        <h6>subtitle with h6</h6>
+        <br/>
+        <!-- paragraph -->
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea nemo
+          modi,
+          <!-- goes to the next line -->
+          <br />
+          <br />
+          dolores illo architecto nam doloribus veritatis et consectetur
+          reiciendis? Reprehenderit soluta repellendus dolorem atque ab at
+          dolorum amet nobis.
+        </p>
+        </div>
+
+        <!-- ordered list (numéroter) -->
+        <ol>
+          <!-- list item -->
+          <li>item 1</li>
+          <!-- another list item -->
+          <li>item 2</li>
+        </ol>
+        <br />
+        <!-- horizontal line -->
+        <hr />
+        <!-- unordered list (points) -->
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+        </ul>
+        <!-- displays an image -->
+        <img src="photo_6033040922204901174_y (4).jpg" alt="image logique" />
+        <!--  button -->
+        <button>click me</button>
+        <!-- link to another page -->
+        <!-- target="_blank" opens the link in a new tab -->
+        <a href="exercise.html" target="_blank">resumily link</a>
+        <hr />
+      </section>
+
+      <!-- second section -->
+      <section>
+        <h1>formulaire de contact</h1>
+
+        <!-- form used to collect information from the user -->
+        <form action="">
+          <!-- text linked to an input -->
+          <label for="inputtext">enter your name</label>
+          <!-- password input -->
+          <!-- required means the user must fill it -->
+          <!-- placeholder is the light text inside the input -->
+          <input
+            type="password"
+            id="inputtext"
+            required
+            placeholder="enter your password"
+          />
+          <!-- checkbox -->
+          <input type="checkbox" id="input1" />
+          <!-- label connected to the checkbox -->
+          <label for="input1">j'accepte les regles</label>
+
+          <input type="checkbox" id="input2" />
+          <label for="">j'accepte pas les regles</label>
+
+          <!-- radio button -->
+          <!-- inputs with the same name belong to the same group -->
+          <input type="radio" name="gender" />
+          <label for="">woman</label>
+          <input type="radio" name="gender" />
+          <label for="">man</label>
+          <br />
+          <br />
+
+          <!-- a large text area where the user can write a message -->
+          <textarea
+            name=""
+            id=""
+            rows="20"
+            cols="50"
+            placeholder="enter your message"
+          ></textarea>
+
+          <br />
+          <button>envoyer</button>
+        </form>
+      </section>
+
+      <!-- third section -->
+      <section>
+        <!-- dropdown list -->
+        <select name="" id="">
+          <!-- default option -->
+          <!-- selected means it is selected by default -->
+          <!-- disabled means the user cannot choose it -->
+          <option value="" selected disabled>select your wilaya</option>
+          <!-- options inside the dropdown -->
+          <option value="alger">alger</option>
+          <option value="boumerdes">boumerdes</option>
+          <option value="">blida</option>
+        </select>
+        <!-- table -->
+        <table border="1">
+          <!-- table row -->
+          <tr>
+            <!-- table headers -->
+            <th>nom</th>
+            <th>la note</th>
+            <th>matiere</th>
+          </tr>
+          <!-- first row of data -->
+          <tr>
+            <!-- table cells -->
+            <td>hayat</td>
+            <td>18</td>
+            <td>math</td>
+          </tr>
+          <!-- second row of data -->
+          <tr>
+            <td>mohamed</td>
+            <td>15</td>
+            <td>math</td>
+          </tr>
+          
+        </table>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yU20m38Kwgw?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!--  a youtube video -->
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/HD13eq_Pmp8?autoplay=1&mute=1"
+          title="YouTube video player"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        >
+        </iframe>
+        <!-- displays a video stored on your computer -->
+        <!-- autoplay starts the video automatically -->
+        <!-- muted removes the sound -->
+        <video style="width: 300px" autoplay muted>
+          <!-- tells the browser where the video file is -->
+          <source src="video_chatbot.MOV" type="video/mp4" />
+          <!-- this text appears if the browser cannot play the video -->
+          this is a video
+        </video>
+      </section>
+    </main>
+    <!-- the bottom part of the website, where we put the informations about the website owner -->
+    <footer>
+      <p>Created by Your Name - 2026</p>
+      <button class="btn">click</button>
+      <section id="section1">
+        <div class="container">
+          <div class="card">
+            <h2>iPhone</h2>
+            <p>$999</p>
+          </div>
+
+          <div class="card">
+            <h2>MacBook</h2>
+            <p>$1999</p>
+          </div>
+
+          <div class="card">
+            <h2>iPad</h2>
+            <p>$699</p>
+          </div>
+
+          <div class="card">
+            <h2>Apple Watch</h2>
+            <p>$399</p>
+          </div>
+
+          <div class="card">
+            <h2>AirPods</h2>
+            <p>$249</p>
+          </div>
+
+          <div class="card">
+            <h2>HomePod</h2>
+            <p>$299</p>
+          </div>
+        </div>
+      </section>
+      <section id="section2">
+        <div id="left">
+          <h1>hello world</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+            possimus amet voluptates reiciendis delectus ratione voluptatibus
+            eligendi vitae ipsa atque? Maiores quia quaerat veritatis illum amet
+            perspiciatis consequuntur, deleniti magni?
+          </p>
+          <button>button 1</button>
+          <button>button2</button>
+          <img src="" alt="">
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

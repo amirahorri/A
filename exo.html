@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+    <main>
+
+ <section>
+  <h1 id="titre">my document1 </h1>
+  <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <button class="btn">click here</button>
+   <button>test</button>
+  </section>
+   <section> 
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque debitis</p>
+</section> 
+<section> 
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque debitis</p>                  
+  </section>
+       <section>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque debitis</p> 
+
+    </section>
+    <section>
+      <ul id="list">
+        <li>item 1</li>
+        <li id="milieu">item 2</li>
+        <li>item 3</li>
+      </ul>
+    </section>
+      </main>
+      <script>
+  let titre = document.querySelector("#titre")
+  let description = document.querySelector(".para")
+  let button = document.querySelector(".button"); 
+  let paragraphes = document.querySelectorAll("p");
+   //  titre.textContent = "nouveau titre <span> special </span>";
+     console.log(paragraphes);
+    titre.innerHTML = "nouveau titre <span> special </span>"; 
+     titre.style.color  = "red";
+     titre.classList.add("newclass")
+     //descriptionµ.classList.remove("para")
+     titre.classList.toggle("actif") 
+     button.classList.toggle("btn")
+
+     let paragraph =document.getElementsByClassName("para")
+     let p =document.getElementsByTagName("p")
+     let paras =document.querySelectorAll("p")
+     //console.log(p)
+     //console.log(paragraph)
+     console.log(paras)
+     paras.forEach((a)=>console.log(a))
+    Array.from(p).forEach((s)=>console.log(s))
+      
+
+    let milieu =document.querySelector("#milieu")
+    let parent = milieu.parentElement
+    console.log("parent"+parent)
+    console.log(milieu.nextElementSibling)
+    console.log(milieu.previousElementSibling)
+    console.log("children"+parent.children)
+    console.log("premier enfant :"+parent.firstElementsCHild.textcontent)
+console.log(parent.lastElementchild)
+// titre.innerHTML="<p>nouveau titre <span> special </span>"
+  titre.outerHTML="nouveau titre <span> special </span>"
+     </script>
+    </body>
+</html>

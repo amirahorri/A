@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .list{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            width: 50%;
+        }
+        nav{
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            width: 50%;
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+        menu{
+            display: none;
+        }
+        @media(max-width:400px){
+            nav{
+                position: relative;
+            }
+            menu{
+                display: flex;
+                background: transparent;
+                border: none;
+            }
+            .list{
+                display: none;
+                position: absolute;
+                top: 50px;
+                left:0;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                background-color: aliceblue;
+            }
+            .list li{
+                padding: 20px;
+            }
+            .active{
+                display: flex;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div>logo</div>
+        <button id="menu">☰</button>
+        <ul class="list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        </ul>
+    </nav>
+</header>
+<script>
+    let resultat = document.getElementById("resultat");
+    
+    function ajouter(valeur){
+
+        resultat.value =resultat.value + valeur;
+
+    }
+    function calculer() {
+        try{
+            resultat.value = eval(resultat.value);
+        }
+        catch{
+            resultat.value ="Erreur"
+        }
+    }
+    function effacer(){
+        resultat.value ="";
+    }
+
+</script>
+</body>
+</html>

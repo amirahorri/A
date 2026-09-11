@@ -1,0 +1,39 @@
+div{
+    width:200px;
+    height:200px;
+    text-align: center;
+    color: white;
+}
+.static{
+    background-color: red;
+}
+.relative{
+    background-color: green;
+    position: relative;
+    left:150px;
+    bottom:200px;
+}
+.sticky{
+    background-color: blue;
+    position: sticky;
+    top:0;
+}
+.absolute{
+    background-color: blueviolet;
+    position:absolute;
+    bottom: 400px;
+}
+.fixed{
+    background-color: gray;
+    position: fixed;
+    left: 20px;
+    top: 50px;
+}
+#section1 {
+    background-color: rgb(161,161,229);
+    height: 200vh;
+}
+#section{
+    height: 100vh;
+    background-color:rgb(219,161,212°) ;
+}

@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+#p1{
+    color: blue;
+}
+#p2{
+    color: blueviolet;
+}
+#p3{
+    color:rgb(red, green, blue);
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma;
+border-style: outset;
+border-width: 3px;
+border-color: blue;
+border-radius: 2px;
+
+}
+P1{
+    
+    font-size: small;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 3px;
+    border-top: 3px;
+    border-left: 3px;
+    border-right: 4px;
+    border-radius: 10px;
+}
+
+body{
+    margin: 0px;
+}
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+}
+#box1{
+    background-color: brown;
+    margin-right: auto;
+}
+#box2{
+    background-color: blue;
+}
+
+#image1{
+float: left;
+margin-right: 5px;
+width: 35%;
+}
+#image2{
+    float: right;
+    margin-left: 35px;
+    margin-left: auto;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+    <form id="form">
+        <input type="text" id="task" placeholder="entrer une tache">
+        <button type="submit">Ajouter</button>
+    </form>
+    <p id="message"></p>
+    <ul id="list"></ul>
+    </section>
+    </main>
+    <script>
+        let form =document.querySelector("#form")
+        let task =document.querySelector("#message")
+        let list =document.querySelector("#list")
+        form.addEventListener("submit",(e) =>{
+            e.preventDefault()
+
+            const taskinput=document.querySelector("#task")
+            const task = taskinput.value.trim()
+            if (task===""){
+                message.textContent ="entrer une tache validee"
+                message.style.color ="red"
+                return
+            }
+            const li =document.createElement("li")
+            li.textContent =task
+            
+            const btn =document.createElement("button")
+            btn.textContent="supprimer"
+
+            li.appendChild(btn)
+        
+            list.appendChild(li)
+        
+
+            message.textContent ="tache ajouter"
+            message.style.color ="green"
+            form.reset()
+        })
+    </script>
+</body>
+</html>

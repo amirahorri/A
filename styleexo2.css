@@ -1,0 +1,73 @@
+nav{
+    display:flex;
+    /* width: 3px; */
+    justify-content:space-between;
+    align-items: center;
+    padding-inline:15px;
+    width: 98%;
+
+}
+
+#box1 {
+    display: flex;
+    align-items: center;
+}
+
+
+
+img{
+    width: 100px;
+}
+
+span{
+color: blue;
+
+}
+#list{
+    display:flex;
+    justify-content: center;
+    gap:50px;
+    list-style: none;
+}
+
+#box_01 {
+    display: flex;
+    justify-content: center;
+}#logo{
+
+    width:100px
+
+}
+#section1{
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding-inline: 50px;
+    background-color: rgba(236, 230, 230, 0.485);
+}
+#iphone{
+    width: 300px;
+    border: 4px dotted blue;
+    border-radius: 40px;
+}
+.title{
+    font-size: 60px;
+}
+.btn1{
+    width: 150px;
+    border-radius:  30px;
+    background-color: black ;
+    color: white;
+}
+.btn2{
+    width:150px;
+    border-radius:  30px;
+    background-color:white;
+}
+#section{
+    width:;
+}
+}

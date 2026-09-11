@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalogue de produits</title>
+</head>
+<body>
+    <div class="catalogue "></div>
+   <script>
+let produits =[
+    {id:1,nom:"sac a dos",prix:"3500 DA",stock:12 ,},
+    {id:2,nom:"stylo plume",prix:"800 DA",stock:0,},
+    {id:3,nom:"Cahier A4",prix:"250 DA",stock:40,},
+    {id:4,nom:"Calculatrice",prix:"2200 DA",stock:5,},
+    {id:5,nom:"Trousse",prix:"800 DA",stock:"bientot de retour",},
+   ];
+
+        let catalogue= document.querySelector(".catalogue")
+        produits.forEach(element => {
+            let div =document.createElement("div")
+            div.classList.add("carte");
+            let titre= document.createElement("h3")
+            titre.textContent=element.nom
+            let prix=document.createElement("prix")
+            prix.textContent=element.prix
+           let image= document.createElement("img")
+           image.setAttribute("src",element.image)
+            image.setAttribute("alt",element.nom)
+            div.append(titre,prix,image)
+            catalogue.append(div)
+         })
+    if (produit.stock=== 0){
+        carte.classList.add("rupture de stock");
+    }
+console.log("nombre de produits:");
+let valeurTotale =produits.reduce((total,p) => total +(p.prix *p.stock));
+console.log("Valeur totale du stock")
+let carteTrousse =catalogue.querySelector('.carte[id="5"]')
+if(carteTrousse){
+    carteTrousse.remove();
+}
+            
+    
+    </script>
+    
+</body>
+</html>

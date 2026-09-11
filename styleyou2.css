@@ -1,0 +1,27 @@
+h1{
+    text-shadow: 2px 1px 100px rgb(red, green, blue)
+}
+body{
+    margin: 0px;
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+#box2{
+    background-color: brown;
+    margin-right: 50px;
+}
+#box3{
+    background-color: blueviolet;
+}
+#img1{
+    float: left;
+    margin-right: 10px;
+}
+#img2{
+    float: right;
+    margin-left: 10px;
+    
+}
