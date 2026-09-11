@@ -424,4 +424,5 @@ function fibonnacci(n) {
     }
     fibonnacci(n-1)+fibonnacci(n-2)
 }
-console.log(fibonnacci(4))
+console.log(fibonnacci(4)) 
+console.log("manel and amira  are bestie ");
